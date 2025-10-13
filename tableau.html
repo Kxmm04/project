@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tableau</title>
+  <style>
+    :root{
+      --bg:#f9fafb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --text:#111827;
+      --pri:#3b82f6;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      background:var(--bg);
+      color:var(--text);
+      font:16px/1.6 system-ui,Segoe UI,Inter,Arial;
+    }
+    a{color:inherit;text-decoration:none}
+
+    /* ✅ เมนูด้านบนแบบติด */
+    .nav{
+      position:sticky;
+      top:0;
+      background:#fff;
+      border-bottom:1px solid #e5e7eb;
+      z-index:9999;
+    }
+
+    .wrap{
+      max-width:1400px;
+      margin:auto;
+      padding:16px 32px;
+    }
+
+    .row{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      justify-content:space-between;
+    }
+
+    .links a{
+      padding:8px 12px;
+      border-radius:6px;
+    }
+    .links a:hover{
+      background:#f3f4f6;
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid #e5e7eb;
+      border-radius:12px;
+      padding:24px;
+      box-shadow:0 4px 10px rgba(0,0,0,.05);
+      margin-bottom:24px;
+    }
+
+    /* ✅ จัดกราฟ Tableau ให้อยู่ตรงกลางและ responsive */
+    .tableauPlaceholder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .tableauPlaceholder object {
+      width: 100%;
+      max-width: 1200px;
+      height: 85vh;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:12px;
+      padding:10px 14px;
+      background:var(--pri);
+      color:#fff;
+      border-radius:8px;
+    }
+    .btn:hover{
+      background:#2563eb;
+    }
+
+    .footer{
+      padding:20px 0;
+      color:var(--muted);
+      text-align:center;
+      margin-top:20px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap row">
+      <div><b>📊 Tableau</b></div>
+      <div class="links">
+        <a href="index.html">หน้าแรก</a>
+        <a href="powerbi.html">Power BI</a>
+        <a href="tableau.html">Tableau</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <div class="card">
+      <h2>ลิงก์ไปยัง Tableau Public</h2>
+      <a class="btn" href="https://public.tableau.com/views/_17591442230500/sheet6?:language=th-TH&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">
+        🔗 เปิด Tableau Public
+      </a>
+    </div>
+
+    <div class="card">
+      <h2>รายงาน Tableau</h2>
+
+      <!-- ✅ กราฟแบบฝัง -->
+      <div class='tableauPlaceholder' id='viz1760292164964' style='position: relative; text-align:center;'>
+        <noscript>
+          <a href='#'>
+            <img alt='การวิเคราะห์แนวโน้มยอดขาย'
+                 src='https://public.tableau.com/static/images/_1/_17591442230500/sheet6/1_rss.png'
+                 style='border:none; display:inline-block;' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:none; margin:auto;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='_17591442230500/sheet6' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/_1/_17591442230500/sheet6/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='th-TH' />
+          <param name='filter' value='publish=yes' />
+        </object>
+      </div>
+
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz1760292164964');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width='100%';
+        vizElement.style.maxWidth='1200px';
+        vizElement.style.height='85vh';
+        vizElement.style.margin='auto';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+
+      <a class="btn" href="index.html">⬅ กลับหน้าแรก</a>
+    </div>
+  </main>
+
+  <footer class="footer">© 2025 DataViz Group</footer>
+</body>
+</html>
