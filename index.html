@@ -1,75 +1,141 @@
 <!DOCTYPE html>
 <html lang="th">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>กลุ่มของเรา | หน้าหลัก</title>
-        <style>
-    :root{--bg:#f9fafb;--card:#ffffff;--muted:#6b7280;--text:#111827;--pri:#3b82f6}
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Inter,Arial}
-    a{color:inherit;text-decoration:none}
-    .nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #e5e7eb}
-    .wrap{max-width:960px;margin:auto;padding:16px}
-    .row{display:flex;gap:14px;align-items:center;justify-content:space-between}
-    .links a{padding:8px 12px;border-radius:6px}
-    .links a:hover{background:#f3f4f6}
-    .hero{padding:48px 16px}
-    .card{background:var(--card);border:1px solid #e5e7eb;border-radius:12px;padding:20px;box-shadow:0 4px 10px rgba(0,0,0,.05);margin-bottom:20px}
-    h1,h2{margin-bottom:8px}
-    ul{padding-left:18px}
-    .btn{display:inline-block;margin-top:12px;padding:10px 14px;background:var(--pri);color:#fff;border-radius:8px}
-    .btn:hover{background:#2563eb}
-    .footer{padding:20px 0;color:var(--muted);text-align:center;margin-top:40px}
-    @media(min-width:700px){.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}}
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>กลุ่มของเรา | หน้าหลัก</title>
+  <style>
+    :root {
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --text: #111827;
+      --pri: #3b82f6;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.6 system-ui, Segoe UI, Inter, Arial;
+    }
+    a { color: inherit; text-decoration: none; }
+    .nav {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .wrap { max-width: 960px; margin: auto; padding: 16px; }
+    .row { display: flex; gap: 14px; align-items: center; justify-content: space-between; }
+    .links a { padding: 8px 12px; border-radius: 6px; }
+    .links a:hover { background: #f3f4f6; }
+    .hero { padding: 48px 16px; }
+    .card {
+      background: var(--card);
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, .05);
+      margin-bottom: 20px;
+    }
+    h1, h2 { margin-bottom: 8px; }
+    ul { list-style: none; padding-left: 0; }
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    li img {
+      width: 80px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 12px;
+      border: 1px solid #ddd;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 14px;
+      background: var(--pri);
+      color: #fff;
+      border-radius: 8px;
+    }
+    .btn:hover { background: #2563eb; }
+    .footer {
+      padding: 20px 0;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 40px;
+    }
+    @media (min-width: 700px) {
+      .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    }
   </style>
-    </head>
-    <body>
-        <nav class="nav">
-            <div class="wrap row">
-                <div class="brand"><b>📊 DataViz Group</b></div>
-                <div class="links">
-                    <a href="index.html">หน้าแรก</a>
-                    <a href="powerbi.html">Power BI</a>
-                    <a href="tableau.html">Tableau</a>
-                </div>
-            </div>
-        </nav>
+</head>
 
-        <header class="hero">
-            <div class="wrap">
-                <div class="card">
-                    <h1>สรุปผลงานการวิเคราะห์ข้อมูล</h1>
-                    <a class="btn" href="powerbi.html">ดูแผนภาพ Power BI →</a>
-                    <a class="btn" href="tableau.html"
-                        style="margin-left:8px">ดูแผนภาพ Tableau →</a>
-                </div>
-            </div>
-        </header>
+<body>
+  <nav class="nav">
+    <div class="wrap row">
+      <div class="brand"><b></b></div>
+      <div class="links">
+        <a href="index.html">หน้าแรก</a>
+        <a href="powerbi.html">Power BI</a>
+        <a href="tableau.html">Tableau</a>
+      </div>
+    </div>
+  </nav>
 
-        <main class="wrap grid">
-            <div class="card">
-                <h2>สมาชิกกลุ่ม</h2>
-                <ul>
-                    <li>ชื่อ นายอภิวัฒน์ ชำนาญรบ รหัสนักศึกษา 66342110242-5 หน้าที่</li>
-                    <li>ชื่อ นางสาวจันทกานต์ ทือเกาะ รหัสนักศึกษา 66342110284-6 หน้าที่</li>
-                    <li>ชื่อ นางสาวสุทธิดา ซินโซ รหัสนักศึกษา 66342110421-7 หน้าที่</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h2>ชุดข้อมูล</h2>
-                <p style="color:var(--muted)">ชุดข้อมูลนี้มาจาก Olist
-                    ซึ่งเป็นแพลตฟอร์ม e-commerce รายใหญ่ในบราซิล
-                    ลักษณะการทำงานคล้าย Lazada / Shopee บ้านเรา โดย Olist
-                    เป็นตัวกลางที่เชื่อมต่อผู้ขายรายย่อยกับลูกค้าทั่วประเทศบราซิล
+  <header class="hero">
+    <div class="wrap">
+      <div class="card">
+        <h1>สรุปผลงานการวิเคราะห์ข้อมูล</h1>
+        <a class="btn" href="powerbi.html">ดูแผนภาพ Power BI →</a>
+        <a class="btn" href="tableau.html" style="margin-left:8px">ดูแผนภาพ Tableau →</a>
+      </div>
+    </div>
+  </header>
 
-                    ข้อมูลนี้ถูกเก็บจากคำสั่งซื้อจริง ๆ ระหว่าง ปี 2016 – 2018
-                    และประกอบด้วยรายละเอียดครบเกือบทุกมิติของธุรกิจออนไลน์
-                    ตั้งแต่ลูกค้า สินค้า ผู้ขาย
-                    ไปจนถึงการชำระเงินและรีวิวของลูกค้า</p>
-            </div>
-        </main>
+  <main class="wrap grid">
+    <div class="card">
+      <h2>สมาชิกกลุ่ม</h2>
+      <ul>
+        <li>
+          <img src="images/นายอภิวัฒน์ ชำนาญรบ.jpg" alt="นายอภิวัฒน์ ชำนาญรบ">
+          <div>
+            <b>นายอภิวัฒน์ ชำนาญรบ</b><br>
+            รหัสนักศึกษา 66342110242-5<br>
+            หน้าที่: พัฒนาและออกแบบระบบข้อมูล
+          </div>
+        </li>
+        <li>
+          <img src="images/นางสาวจันทกานต์ ทือเกาะ.jpg" alt="นางสาวจันทกานต์ ทือเกาะ">
+          <div>
+            <b>นางสาวจันทกานต์ ทือเกาะ</b><br>
+            รหัสนักศึกษา 66342110284-6<br>
+            หน้าที่: ออกแบบภาพและรายงานนำเสนอ
+          </div>
+        </li>
+        <li>
+          <img src="images/นางสาวสุทธิดา ซินโซ.jpg" alt="นางสาวสุทธิดา ซินโซ">
+          <div>
+            <b>นางสาวสุทธิดา ซินโซ</b><br>
+            รหัสนักศึกษา 66342110421-7<br>
+            หน้าที่: วิเคราะห์ข้อมูลและสรุปผลการนำเสนอ
+          </div>
+        </li>
+      </ul>
+    </div>
 
-        <footer class="footer">© 2025 DataViz Group</footer>
-    </body>
+    <div class="card">
+      <h2>ชุดข้อมูล</h2>
+      <p style="color:var(--muted)">
+        ชุดข้อมูลนี้มาจาก Olist ซึ่งเป็นแพลตฟอร์ม e-commerce รายใหญ่ในบราซิล
+        ทำงานคล้าย Lazada / Shopee โดย Olist เป็นตัวกลางที่เชื่อมต่อผู้ขายรายย่อยกับลูกค้าทั่วประเทศบราซิล
+        ข้อมูลนี้เก็บจากคำสั่งซื้อจริงระหว่างปี 2016 – 2018
+        ครอบคลุมข้อมูลลูกค้า สินค้า ผู้ขาย การชำระเงิน และรีวิวจากลูกค้า
+      </p>
+    </div>
+  </main>
+</body>
 </html>
